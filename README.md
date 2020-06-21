@@ -2,7 +2,7 @@
 Basic example of how to integrate your C Library with Lua
 
 Hello guys, I've been in some trouble getting to have a C Library working with love, so I want to archive how to do it:
-This tutorial is made mainly for  **Linux **, but experienced users from windows will understand what to do
+This tutorial is made mainly for  **Linux**, but experienced users from windows will understand what to do
 
 First things first, if you're working on a linux environment, you will want to install Lua (which you're probably using only from love), but it should not be any version, it must be the same Lua version used with  **Love 11.3 **, which is  **Lua 5.1 **, so execute the following command in your terminal
 ```sh
@@ -66,7 +66,7 @@ You need to call lua_push[data](value), the most common to find using are:
 - lua_pushstring,
 - lua_pushcfunction,
 - lua_pushnil,
-- lua_pushvalue**
+- lua_pushvalue
 
 In our case, we're returning a number, so:
 ```c
