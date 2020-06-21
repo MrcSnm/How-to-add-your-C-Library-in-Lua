@@ -54,7 +54,9 @@ Some of these checks are as easily to remember as
 - luaL_checkany
 
 Now you're ready to do whatever you want with the parameters, as shown in the simple example, let's multiply it for 50
-```c number*= 50;```
+```c
+number*= 50;
+```
 (Short for number = number * 50)
 After that, we will want to return it into some variable in Lua, so how we do that?
 You need to call lua_push[data](value), the most common to find using are:
@@ -163,4 +165,9 @@ lib();
 --Shorter Version - package.loadlib("./libnativefunc.so", "luaopen_libnativefunc")()
 ```
 So, basically, the difference between the harder and easier way, is that in the harder way, you define which function registers your library
-After that, you will be able to call your own ```luaprint(nativelib.mult50(50)) ```
+After that, you will be able to call your own 
+```lua
+print(nativelib.mult50(50))
+```
+
+[result_image](result.png)
