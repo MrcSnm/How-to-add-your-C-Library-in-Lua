@@ -170,4 +170,4 @@ After that, you will be able to call your own
 print(nativelib.mult50(50))
 ```
 
-[result_image](result.png)
+![result_image](result.png)
